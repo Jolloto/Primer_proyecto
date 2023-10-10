@@ -11,7 +11,7 @@ public class Animal : MonoBehaviour
         
         private void Start()
     {
-        
+        Debug.Log($"{name} tiene {totalLegs} patas");
     }
 
 }

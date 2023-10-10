@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor.VersionControl;
 using UnityEngine;
 
@@ -24,6 +25,14 @@ public class MyFirstScript : MonoBehaviour
 
     [SerializeField] private int num1;
     [SerializeField] private int num2;
+
+    [SerializeField] private int coins; 
+    
+    [SerializeField] private int hour;
+
+    [SerializeField] private float num;
+
+    [SerializeField] private int lives;
 
     private void Start()
     {
@@ -55,7 +64,7 @@ public class MyFirstScript : MonoBehaviour
                
          
 
-
+        /*
         Debug.Log(message:2 + 5);
         Debug.Log(message:num1 + num2);
         Debug.Log(message:num1 + 10);
@@ -64,6 +73,79 @@ public class MyFirstScript : MonoBehaviour
         Debug.Log(message:$"{num1} - {num2} = {num1 - num2}");
         Debug.Log(message:$"{num1} * {num2} = {num1 * num2}");
         Debug.Log(message:$"{num1} / {num2} = {num1 / num2}");
+
+        //  +=
+        coins = coins + 5;
+        coins += 5;
+
+        coins += 1;
+        coins++;
+
+        // -=
+        coins = coins - 5;
+        coins -= 5;
+
+        coins -= 1;
+        coins--;
+
+        // *=
+        coins = coins * 5;
+        coins *= 5;
+
+        // /=
+        coins = coins / 5;
+        coins /= 5;
+         */
+
+        /*
+         // 0, 1, 2, 3, 4
+        Debug.Log(hour % 5);
+         */
+
+
+        /*
+        // OPERADORES CONDICIONALES
+        // IGUALDAD ==
+        // TRUE si los objetos son iguales
+        // FALSE si los objetos son diferentes
+        //Debug.Log(num1 == num2);
+
+        // DESIGUALDAD !=
+        // TRUE si los objetos son diferentes
+        // FALSE si los objetos son iguales
+        //Debug.Log(num1 != num2);
+
+        // MENOR <
+        // true si el número de la izquierda es mas pequeño que el de la derecha
+        // false si el numero de la izquierda es mayor o igual al de la derecha
+        Debug.Log(message: num1 < num2);
+
+        // MAYOR >
+        // true si el número de la izquierda es mas grande que el de la derecha
+        // false si el numero de la izquierda es menor o igual al de la derecha
+        Debug.Log(num1 > num2)
+
+        // MENOR O IGUAL <=
+        // true si el numero de la izquierda es menor o igual al de la derecha
+        // false si el numero de la izquieda es 
+        Debug.Log(message: num1 <= num2);
+
+        // MAYOR O IGUAL >=
+        // true si el numero de la izquierda es mayor o igual al de la derecha
+        // false si el numero de la izquierda es menor al de la derecha
+        Debug.Log(num1 >= num2);
+        */
+
+        if (num2 > 0)
+        {
+            Debug.Log($"{num}es positivo");
+         }
+
+        if (lives <= 0)
+        {
+            Debug.Log("GAME OVER");
+        }
+
     }
 
 
