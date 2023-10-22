@@ -15,7 +15,7 @@ public class Operations : MonoBehaviour
         Debug.Log(message: $"{num1} * {num2} = {num1 * num2}");
         Debug.Log(message: $"{num1} / {num2} = {num1 / num2}");
 
-        Debug.Log(message: $"{num3} + ¨{num4} = {num3 % num4}");
+        Debug.Log(message: $"{num3} + {num4} = {num3 % num4}");
 
     }
 

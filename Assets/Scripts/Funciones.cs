@@ -11,24 +11,24 @@ public class Funciones : MonoBehaviour
     private void Start()
     {
         /*
-        SayHelloTo(name: "Royito");
-        SayHelloTo(name: "Ceci");
-        SayHelloTo(name: "Marki Marki");
-        SayHelloTo(name: "Yohuas");
+            SayHelloTo(name: "Royito");
+            SayHelloTo(name: "Ceci");
+            SayHelloTo(name: "Marki Marki");
+            SayHelloTo(name: "Yohuas");
 
-        Debug.Log($"La suma de los 3 numeros es: {SumThreeIntNumbers(19, 22, 43)}");
+            Debug.Log($"La suma de los 3 numeros es: {SumThreeIntNumbers(19, 22, 43)}");
+    
 
+            Debug.Log(ShowUserInfo("emesefe",45));
+            
 
-        Debug.Log(ShowUserInfo("emesefe",45));
-        */
+        
+            Calculator(5, 3);
+            Calculator(10, 7);
+            Calculator(90, 23);
 
-        /*
-        Calculator(5, 3);
-        Calculator(10, 7);
-        Calculator(90, 23);
-
-        Debug.Log(Hello)
-        /*
+            Debug.Log(Hello)
+         */
         
     }
 
