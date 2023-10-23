@@ -150,7 +150,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 681837486}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e35fbf87f31b0414d9f0918fb26d695a, type: 3}
   m_Name: 
@@ -162,6 +162,9 @@ MonoBehaviour:
   i: 1
   o: 0
   u: 0
+  grade: 9
+  mynumber: 0
+  mynumber2: 0
 --- !u!136 &681837488
 CapsuleCollider:
   m_ObjectHideFlags: 0

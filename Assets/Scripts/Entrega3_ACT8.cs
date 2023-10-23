@@ -2,14 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Prueba_Ejercicio : MonoBehaviour
-
+public class Entrega3_ACT8 : MonoBehaviour
 {
-   [SerializeField] private bool issaturday = true;
+    [SerializeField] private bool issaturday = true;
 
-
+    
     void Start()
-   {
+    {
+         
+    
     if (!issaturday)
     {
       Debug.Log("Es fin de semana");
@@ -18,7 +19,7 @@ public class Prueba_Ejercicio : MonoBehaviour
     {
       Debug.Log("Es entre semana");
     }
-   }
+    }
 
-   
+    
 }

@@ -13,13 +13,24 @@ public class Entrega_3 : MonoBehaviour
    [SerializeField] private bool o = false;
    [SerializeField] private bool u = false;
 
-   [SerializeField] private float num1;
-   [SerializeField] private float num2; 
+   [SerializeField] private int grade = 9;
 
+   [SerializeField] private int mynumber;
+   [SerializeField] private int mynumber2;
+
+   [SerializeField] private bool issaturday = true;
+ 
 
     void Start()
     {
-        Debug.Log(num1 > num2);
+       if (num1 > num2) 
+       {
+          Debug.Log($"{num1} es mas grande");
+       }
+       else if (num2 > num1)
+       {
+          Debug.Log($"{num2} es mas grande");
+       }
 
        if (a) 
        {
@@ -46,13 +57,45 @@ public class Entrega_3 : MonoBehaviour
             Debug.Log("Es consonante");
        }
 
-       
-       void Calculator(int num1, int num2)
-       {
-            Debug.Log($"{num1} / {num2} = {num1 / num2}");
-       }
-    
-    }
+       if (grade >= 9) 
+      {
+         Debug.Log("A");
+      }
+       else if (grade >= 7) 
+      {
+         Debug.Log("B");
+      }
+      else if (grade >= 5)
+      {
+         Debug.Log("C");
+      }
+       else if (grade <= 4)
+      {
+         Debug.Log("D");
+      }
+
+
+     Debug.Log($"Es el {mynumber} divisble: {IsEven(mynumber2)}");
+
+     }
+
+     private bool IsEven(int number) 
+     {
+          if (mynumber % 2 == mynumber2) 
+          {
+               return true;
+          }
+          else
+          {
+               return false;
+          }
+     }
+
+     
+  
 
     
 }
+
+    
+
