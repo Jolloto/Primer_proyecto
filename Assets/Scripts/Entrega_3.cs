@@ -7,6 +7,8 @@ public class Entrega_3 : MonoBehaviour
    [SerializeField] private float num1;
    [SerializeField] private float num2;
 
+   
+
    [SerializeField] private bool a = false;
    [SerializeField] private bool e = false;
    [SerializeField] private bool i = false;
@@ -76,7 +78,6 @@ public class Entrega_3 : MonoBehaviour
 
 
      Debug.Log($"Es el {mynumber} divisble: {IsEven(mynumber2)}");
-
      }
 
      private bool IsEven(int number) 

@@ -17,10 +17,7 @@ public class Entrega3_Act9 : MonoBehaviour
 
     void Start()
     {
-        if (age || gold)
-        {
-            Debug.Log("Tienes 75% de descuento");
-        }
+        
     }
 
     
