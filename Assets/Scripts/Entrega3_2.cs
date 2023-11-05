@@ -23,6 +23,7 @@ public class Prueba_Ejercicio : MonoBehaviour
   [SerializeField] private int angle3;
 
 
+  //A10
   bool isValidTriangle(int angle1, int angle2, int angle3)
   {
     if((angle1 + angle2 + angle3) != 180)
@@ -58,6 +59,7 @@ public class Prueba_Ejercicio : MonoBehaviour
     }
   }
 
+  //A5
   bool IsValidDate(int day, int month, int year)
   {
     if(year < 1)
@@ -140,7 +142,7 @@ public class Prueba_Ejercicio : MonoBehaviour
     {
       Debug.Log("No es una vocal: " + letra.ToString());
     }
-    // cond2 = (letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u');
+  // cond2 = (letra == 'a' or letra == 'e' or letra == 'i' or letra == 'o' or letra == 'u');
 
     // A3
 
