@@ -14,7 +14,7 @@ public class Entrega_4 : MonoBehaviour
     [SerializeField] private int year;
     [SerializeField] private int grade = 7;
 
-    [SerializeField] private float base;
+    [SerializeField] private float b;
     [SerializeField] private float height;
 
     [SerializeField] private int num3;
@@ -94,38 +94,44 @@ public class Entrega_4 : MonoBehaviour
          bool cond2 = (year % 100) != 0;
          bool cond3 = (year % 400) == 0;
 
-         if((cond1) && (cond2))
+         if(cond1 && cond2) 
          {
             return true;
+          
          } 
+         else if(cond2)
+         {
+            return true;
+         }
          else if(cond3)
          {
             return true;
          }
-         else
-         {
-            return false;
+         else 
+         { 
+          return false; 
          }
       }
 
-      //A5 
+    //A5 
 
-      // Lo siento no lo entiendo
+    // Lo siento no lo entiendo
 
-      //A6 
-      
-      //Lo siento tampoco lo entiendo
+    //A6 
 
-      //A7
+    //Lo siento tampoco lo entiendo
 
-      private bool AnosChinos(year)
-      {
-         string[] anoschinos = {"rata", "buey", "tigre", "conejo", "dragón", "serpiente", "caballo", "cabra", "mono", "gallo", "perro", "cerdo"};
+    //A7
 
-         int pos = (year - 1912) % 12;
+    private string AnosChinos(int year)
+    {
+        string[] anoschinos = { "rata", "buey", "tigre", "conejo", "dragón", "serpiente", "caballo", "cabra", "mono", "gallo", "perro", "cerdo" };
 
-         Debug.Log("El ano chino para el ano: " + year.ToString() + " es " + anoschinos[pos] + ".");
-      }     
+        int pos = (year - 1912) % 12;
+
+        Debug.Log("El año chino para el año: " + year.ToString() + " es " + anoschinos[pos] + ".");
+        return anoschinos[pos];
+     }     
 
       //A8
 
@@ -135,27 +141,32 @@ public class Entrega_4 : MonoBehaviour
 
       //A9
 
-      bool Nota(int grade)
+      string Nota(int grade)
       {
          if (grade < 5)
          {
             Debug.Log("D");
+            return "D";
          }
          else if (grade < 7)
          {
             Debug.Log ("C");
+            return "C";
          }
          else if (grade < 9)
          {
             Debug.Log("B");
+            return"B";
          }
          else if (grade <= 10)
          {
             Debug.Log("A");
+            return "A";
          }
          else
          {
             Debug.Log("Pon la nota bien.");
+            return "Pon la nota bien.";
          }
       }
 
@@ -164,7 +175,7 @@ public class Entrega_4 : MonoBehaviour
 
       private bool IsEven(int num3)
       {
-         if (number % 2 == 0)
+         if (num3 % 2 == 0)
          {
             return true;
          }

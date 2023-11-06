@@ -16,7 +16,7 @@ public class Entrega_3 : MonoBehaviour
        [SerializeField] private bool u = false;
     */
 
-<<<<<<< Updated upstream
+
    
 
    [SerializeField] private bool a = false;
@@ -26,7 +26,7 @@ public class Entrega_3 : MonoBehaviour
    [SerializeField] private bool u = false;
 
    [SerializeField] private int grade = 9;
-=======
+
     private string letra = "j";
 
     [SerializeField] private int day = 31;
@@ -40,10 +40,9 @@ public class Entrega_3 : MonoBehaviour
 
    [SerializeField] private string range;
 
-   [SerializeField] private int num3;
-   [SerializeField] private int num4;
+   
 
->>>>>>> Stashed changes
+
 
    [SerializeField] private int mynumber;
    [SerializeField] private int mynumber2;
@@ -87,7 +86,7 @@ public class Entrega_3 : MonoBehaviour
             Debug.Log("Es consonante");
        }
 
-<<<<<<< Updated upstream
+
        if (grade >= 9) 
       {
          Debug.Log("A");
@@ -121,9 +120,10 @@ public class Entrega_3 : MonoBehaviour
           }
      }
 
-     
-  
-=======
+    private void Ae()
+    {
+
+
         if (age > 65)
         {
             if (range == "gold")
@@ -138,6 +138,7 @@ public class Entrega_3 : MonoBehaviour
             {
                 Debug.Log("25% de descuento");
             }
+
         }
         else if (age < 65)
         {
@@ -154,11 +155,11 @@ public class Entrega_3 : MonoBehaviour
                 Debug.Log("15 de descuento");
             }
         }
-        else 
+        else
         {
-            Debug.Log("No puede ser socio"); 
+            Debug.Log("No puede ser socio");
         }
->>>>>>> Stashed changes
+
 
         if (month <= 12 && month >= 1)
         {
@@ -251,14 +252,15 @@ public class Entrega_3 : MonoBehaviour
                     Debug.Log("El dia existe");
                 }
             }
-        }
 
-       {
-            Debug.Log($"{num3} % {num4} = {num3 % num4}");
-       }
+            {
+                //Debug.Log($"{num3} % {num4} = {num3 % num4}");
+            }
+        }
     }
-    
 }
+
+
 
     
 
