@@ -14,10 +14,15 @@ public class Entrega_4 : MonoBehaviour
     [SerializeField] private int year;
     [SerializeField] private int grade = 7;
 
-    [SerializeField] private float b;
-    [SerializeField] private float height;
+    //[SerializeField] private int angle1;
+    //[SerializeField] private int angle2;
+    //[SerializeField] private int angle3;   
+    [SerializeField] private int b;
+    [SerializeField] private int height;
 
     [SerializeField] private int num3;
+
+   
 
 
    void Start()
@@ -29,6 +34,11 @@ public class Entrega_4 : MonoBehaviour
      AnosChinos(year);
      Nota(grade);
      IsEven(num3);
+    // SumaDia(day, month, year);
+    //RestaDia(day, month, year);
+    //isValidTriangle(angle1, angle2, angle3);
+     AreaTriangle(b,height);
+
    }
 
 
@@ -113,9 +123,24 @@ public class Entrega_4 : MonoBehaviour
          }
       }
 
-    //A5 
+      //A5 
 
-    // Lo siento no lo entiendo
+      /*private void SumaDia(int day, int month, int year)
+      {
+        if(year < 1)
+        {
+         if((month < 1) || (month > 12))
+         {
+             if (day <= 0) && (day > month_days[month])
+             Debug.Log(result = )
+         }
+         // No se seguir  
+        }
+
+            
+      }
+      */
+           
 
     //A6 
 
@@ -135,8 +160,30 @@ public class Entrega_4 : MonoBehaviour
 
       //A8
 
-      //Ahora pruebo a hacerla
+      /*
+      bool isValidTriangle(int angle1, int angle2, int angle3)
+      {
+         if((angle1 + angle2 + angle3) != 180)
+         {
+            return false;
+         } 
+         else
+         {
+            return true;
+         }
 
+         
+      }
+      */
+
+      private int AreaTriangle(int b, int height)
+      {
+         int result = (b * height) / 2;
+         
+         return result;
+         
+      }
+      
 
 
       //A9
@@ -184,9 +231,10 @@ public class Entrega_4 : MonoBehaviour
             return false;
          }
       }
+}
 
 
      
 
-}   
+   
 
