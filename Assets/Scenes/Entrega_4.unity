@@ -441,9 +441,13 @@ MonoBehaviour:
   num1: 0
   num2: 0
   letter: c
-  day: 0
-  month: 0
-  year: 0
+  day: 20
+  month: 6
+  year: 2002
+  grade: 7
+  b: 0
+  height: 0
+  num3: 0
 --- !u!1 &1316699160
 GameObject:
   m_ObjectHideFlags: 0

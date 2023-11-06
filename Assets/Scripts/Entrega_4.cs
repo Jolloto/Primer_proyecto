@@ -34,8 +34,8 @@ public class Entrega_4 : MonoBehaviour
      AnosChinos(year);
      Nota(grade);
      IsEven(num3);
-    // SumaDia(day, month, year);
-    //RestaDia(day, month, year);
+     SumaDia(day, month, year);
+     RestaDiaDia(day, month, year);
     //isValidTriangle(angle1, angle2, angle3);
      AreaTriangle(b,height);
 
@@ -125,26 +125,68 @@ public class Entrega_4 : MonoBehaviour
 
       //A5 
 
-      /*private void SumaDia(int day, int month, int year)
+      private int SumaDia(int day, int month, int year)
       {
-        if(year < 1)
-        {
+         if(year < 1)
+         {
+            return true;
+         }
+
          if((month < 1) || (month > 12))
          {
-             if (day <= 0) && (day > month_days[month])
-             Debug.Log(result = )
+            return true;
          }
-         // No se seguir  
-        }
 
-            
+         int[] month_days = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+         if ((day <= 0) + 1)
+         {
+            return true;
+         }
+         
+         if (day > month_days[month])
+         {
+            return true;
+           
+         }
+         if (day - 1)
+        
+         return false;
       }
-      */
+
            
 
     //A6 
 
-    //Lo siento tampoco lo entiendo
+    private int RestaDiaDia(int day, int month, int year)
+      {
+         if(year < 1)
+         {
+            return true;
+         }
+
+         if((month < 1) || (month > 12))
+         {
+            return true;
+         }
+
+         int[] month_days = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+         if ((day <= 0) )
+         {
+            return true;
+         }
+         
+         if (day > month_days[month])
+         {
+            return true;
+           
+         }
+         if (day - 1)
+         {
+            return;
+         }
+      }
 
     //A7
 
