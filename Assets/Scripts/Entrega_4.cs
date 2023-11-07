@@ -35,7 +35,7 @@ public class Entrega_4 : MonoBehaviour
      Nota(grade);
      IsEven(num3);
      SumaDia(day, month, year);
-     RestaDiaDia(day, month, year);
+     RestaDia(day, month, year);
     //isValidTriangle(angle1, angle2, angle3);
      AreaTriangle(b,height);
 
@@ -123,70 +123,82 @@ public class Entrega_4 : MonoBehaviour
          }
       }
 
-      //A5 
+    //A5 
 
-      private int SumaDia(int day, int month, int year)
-      {
-         if(year < 1)
-         {
-            return true;
-         }
+    private void SumaDia(int day, int month, int year)
+    {
+        day = day + 1;
 
-         if((month < 1) || (month > 12))
-         {
-            return true;
-         }
+        if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+        {
+            if (day > 31)
+            {
+                day = 1;
+                month = month + 1;
+                if (month >= 12)
+                {
+                    day = 1;
+                    month = 1;
+                    year = year + 1;
+                }
+            }
+        }
+        if (month == 2 || month == 4 || month == 6 || month == 9 || month == 11)
+            if (day > 30)
+            {
+                day = 1;
+                month = month + 1;
+                if (month > 12)
+                {
+                    day = 1;
+                    month = 1;
+                    year = year + 1;
+                }
+            }
 
-         int[] month_days = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-
-         if ((day <= 0) + 1)
-         {
-            return true;
-         }
-         
-         if (day > month_days[month])
-         {
-            return true;
-           
-         }
-         if (day - 1)
-        
-         return false;
-      }
-
-           
-
+        Debug.Log(message: $"{day}/{month}/{year}");
+    }
+     
     //A6 
 
-    private int RestaDiaDia(int day, int month, int year)
-      {
-         if(year < 1)
-         {
-            return true;
-         }
+    private void RestaDia(int day, int month, int year)
+    {
+        day = day - 1;
 
-         if((month < 1) || (month > 12))
-         {
-            return true;
-         }
+        if (month == 2 || month == 4 || month == 6 || month == 8 || month == 9 || month == 11)
+        {
+            if (day <  1)
+            {
+                day = 31;
+                month = month - 1;
+                
+            }
+        }
+        else if (month == 1)
+            {
+            if (day < 1) 
+            {
+                day = 31;
+                month = 12;
+                year--;
+            }
+            else if (month == 3) 
+            {
+                day = 28;
+                month = 2;
+            }
+            if (month == 5 || month == 7 || month == 10 || month == 12)
+                if (day < 1)
+                {
+                if (day < 1) 
+                { 
+                    day = 30;
+                    month = month - 1;
+                }
+        
 
-         int[] month_days = {0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-
-         if ((day <= 0) )
-         {
-            return true;
-         }
-         
-         if (day > month_days[month])
-         {
-            return true;
-           
-         }
-         if (day - 1)
-         {
-            return;
-         }
-      }
+                Debug.Log(message: $"{day}/{month}/{year}");
+        }
 
     //A7
 
